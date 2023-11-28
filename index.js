@@ -9,7 +9,7 @@ app.set('view engine' , "handlebars")
 app.get('/', (requisicao , resposta) =>{
     resposta.render('Home')
 })
-app.use(express.static('public'))
+app.use(express.static('public')) 
 
 app.listen(3000,() =>{
     console.log('servidor rodando na porta 3000')
