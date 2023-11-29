@@ -83,7 +83,7 @@ app.get('/ativas', (requisicao,resposta)=>{
             return{
                 id: dado.id,
                 descricao: dado.descricao,
-                completa: dado.completa === 0 ? false : true
+                completa: false
             }
         })
 
