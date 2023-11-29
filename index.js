@@ -49,10 +49,10 @@ app.get('/', (requisicao , resposta) =>{
             }
         })
 
-        
+        resposta.render('Home', { tarefas})
     })
 
-    resposta.render('Home')
+    
 
 })
 

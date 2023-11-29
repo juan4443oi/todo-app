@@ -1,61 +1,29 @@
 <main>
     <section class="tarefas">
+        {{#each tarefas}}
         <div class="tarefa">
             <form action="">
                 <div>
-                    <input type="radio" id="tarefa-1">
-                    <label for="tarefa-1">Completrar curso de Javascript</label>
+                    <input type="checkbox" id="tarefa-{{this.id}}">
+                    <label for="tarefa-{{this.id}}"> {{this.descricao}} </label>
                 </div>        
                
-
                 <button>
                     <img src="/imagens/x-icon.png" alt="icone x">
-                </button>
-        
-            </form>
-        </div> 
-    </div>
-        <div class="tarefa">
-            <form action="">
-                <div>
-                    <input type="radio" id="tarefa-1">
-                    <label for="tarefa-1">Completrar curso de Javascript</label>
-                </div>        
-              
-
-                <button>
-                    <img src="/imagens/x-icon.png" alt="icone x">
-                </button>
-        
-            </form>
-        </div> 
-    </div>
-        <div class="tarefa">
-            <form action="">
-                <div>
-                    <input type="radio" id="tarefa-1">
-                    <label for="tarefa-1">Completrar curso de Javascript</label>
-                </div>        
-                
-
-                <button>
-                    <img src="/imagens/x-icon.png" alt="icone x">
-                </button>
-        
+                </button>  
             </form>
         </div>
-    </div>
-    <div class="informacoes">
-        <p>5 tarefas ativas</p>
+        {{/each}}
+        <div class="informacoes">
+            <p>5 tarefas ativas</p>
 
-        <div class="botoes">
-            <a href="" class="active">Todas</a>
-            <a href="">Ativas</a>
-            <a href="">Completas</a>
+            <div class="botoes">
+                <a href="" class="active">Todas</a>
+                <a href="">Ativas</a>
+                <a href="">Completas</a>
         </div>
-
-        <a href="">Limpar Tarefas</a>
-    </div>
+            <a href="">Limpar Tarefas</a>
+        </div>
     </section>
 
     <section class="botoes">
