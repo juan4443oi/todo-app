@@ -68,6 +68,11 @@ app.post('/criar' , (requisicao , resposta)=>{
 
 })
 
+app.get('/ativas', (requisicao,resposta)=>{
+    
+})
+
+
 app.get('/', (requisicao , resposta) =>{
     const sql = 'SELECT * FROM tarefas'
     
@@ -90,7 +95,7 @@ app.get('/', (requisicao , resposta) =>{
 
         const quantidadeTarefasAtivas = tarefasAtivas.length
 
-        resposta.render('Home', { tarefas , quantidadeTarefasAtivas})
+        resposta.render('home', { tarefas , quantidadeTarefasAtivas})
     })
 
     

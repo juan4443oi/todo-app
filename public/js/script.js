@@ -1,7 +1,7 @@
 function completarTarefa(id){
-    fetch("http:/localhost:3000/completar",{
+    fetch("http://localhost:3000/completar",{
         method: "POST",
-        Headers: {
+        headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({id})
@@ -11,9 +11,9 @@ function completarTarefa(id){
 }
 
 function descompletarTarefa(id){
-    fetch("http:/localhost:3000/descompletar",{
+    fetch("http://localhost:3000/descompletar",{
         method: "POST",
-        Headers: {
+        headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({id})
@@ -24,7 +24,7 @@ function descompletarTarefa(id){
 
 
 function alterarTema(){
-    
+
     const tema = localStorage.getItem("tema")
     const body = document.querySelector("body")
     const button = document.querySelector(".tema-button")
