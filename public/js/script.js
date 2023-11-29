@@ -6,7 +6,7 @@ function alterarTema(){
         let novoTema
         
         if (tema === "Light"){
-            novTema = "dark"
+            novoTema = "dark"
             button.innerHTML = `<img src="/imagens/sun-icon.png" alt="icone do sol">`
             body.classList.remove("Light")
             body.classList.add("dark")
