@@ -1,5 +1,17 @@
 function completarTarefa(id){
-    ferch("http:/localhost:3000/completar",{
+    fetch("http:/localhost:3000/completar",{
+        method: "POST",
+        Headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({id})
+    })
+
+    window.location.reload()
+}
+
+function descompletarTarefa(id){
+    fetch("http:/localhost:3000/descompletar",{
         method: "POST",
         Headers: {
             'Content-Type': 'application/json'
@@ -12,6 +24,7 @@ function completarTarefa(id){
 
 
 function alterarTema(){
+    
     const tema = localStorage.getItem("tema")
     const body = document.querySelector("body")
     const button = document.querySelector(".tema-button")
