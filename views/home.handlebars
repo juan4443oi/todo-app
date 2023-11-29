@@ -1,3 +1,5 @@
+{{#if tarefas}}
+
 <main>
     <section class="tarefas">
         {{#each tarefas}}
@@ -34,7 +36,7 @@
                 <a href="/completas">Completas</a>
             </div>
 
-            <a href="">Limpar Tarefas</a>
+            <a href="/limparTarefas">Limpar Tarefas</a>
         </div>
     </section>
 
@@ -44,3 +46,5 @@
         <a href="/completas">Completas</a>
     </section>
 </main>
+
+{{/if}}

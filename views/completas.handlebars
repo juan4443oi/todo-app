@@ -8,9 +8,9 @@
                     <label for="tarefa-{{this.id}}"> {{this.descricao}} </label>
                 </div>
                
-                <button>
+                <button onclick="excluirTarefa({{this.id}})">
                     <img src="/imagens/x-icon.png" alt="icone x">
-                </button>  
+                </button> 
             </form>
         </div>
         {{/each}}
@@ -23,7 +23,7 @@
                 <a href="/completas"class="active">Completas</a>
             </div>
 
-            <a href="">Limpar Tarefas</a>
+            <a href="/limparTarefas">Limpar Tarefas</a>
         </div>
     </section>
 
@@ -33,3 +33,4 @@
             <a href="/completas"class="active">Completas</a>
     </section>
 </main>
+
