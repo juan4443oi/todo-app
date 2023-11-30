@@ -127,7 +127,7 @@ app.get('/completas' ,(requisicao , resposta)=>{
 app.get('/ativas', (requisicao,resposta)=>{
     const sql = `
     SELECT * FROM tarefas
-    WHERE completas = 0
+    WHERE completa = 0
     `
 
     conexao.query(sql, (erro ,dados) =>{
